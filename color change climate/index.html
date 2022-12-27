@@ -1,0 +1,27 @@
+<html>
+<head>
+<script language="JavaScript" type="text/javascript">
+function SunRain() {
+	if (document.getElementById('A').innerHTML == 'SUN') 
+	{
+		document.getElementById('A').innerHTML = 'RAIN';
+		//document.body.style.background = 'red';
+		document.getElementById('l').style.background = 'purple';
+		document.getElementById('l').style.boderColor= '3px solid black';
+		
+	} 
+	else
+	 {
+		document.getElementById('A').innerHTML = 'SUN';
+		//document.body.style.background = 'green';
+		document.getElementById('l').style.background = 'aqua';
+		document.getElementById('l').style.boderColor= '3px solid black';
+	}
+}
+</script>
+</head>
+<body>
+<a id="A" type="button" onclick="SunRain()" href="#">SUN</a>
+<div id="l" style="height:500px;width:500px;"></div>
+</body>
+</html>
